@@ -1,0 +1,40 @@
+
+.verticalCards {
+    display: flex;
+    padding: 250px;
+    
+}
+
+
+
+.cards {
+    background: linear-gradient(to left top, rgba(255,255,255,0.7), rgba(255,255,255,0.4));
+    border-radius: 1rem;
+    margin: 1rem 2rem;
+    padding: 1rem;
+    font-family: 'poppins',sans-serif;
+    text-decoration:none;
+    color:white;
+    box-shadow: 6px 6px 20px rgba(122,122,122,0.2);
+    width: 330px;
+    height: 330px;
+    outline: .1rem solid #426696;
+    outline-offset: -0.8rem;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.5s linear;
+}
+
+    .cards img {
+        height: 15rem;
+        width: 18rem;
+    }
+
+    .cards:hover {
+        outline: .2rem #426696;
+        outline-offset: 0rem;
+    }
+
+        .cards:hover img {
+            transform: scale(.9);
+        }

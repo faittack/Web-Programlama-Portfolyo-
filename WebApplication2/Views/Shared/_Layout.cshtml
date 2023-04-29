@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] FACE INT</title>
+    <link rel="stylesheet" href="~/css/Layoutstyle.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    
+</head>
+<body>
+	<div class="container">
+		<header>
+			<nav>
+				<a asp-controller="Home" asp-action="MainPage" id="logo">
+					<h1>FACE</h1>
+				</a>
+				<ul>
+					<li><a asp-controller="Home" asp-action="MainPage" >Ana Sayfa</a></li>
+					<li><a asp-controller="Home" asp-action="Project">Projeler</a></li>
+					<li><a asp-controller="Home" asp-action="Contact">İletişim</a></li>
+					<li><a asp-controller="Login" asp-action="Login">Giriş Yap</a></li>
+				</ul>
+			</nav>
+		</header>
+
+	</div>
+
+    <div class="container" id="ara" >
+
+		@RenderBody()
+
+	</div>
+
+
+	<div class="container">
+		<footer class="footer-distributed">
+
+			<div class="footer-left">
+
+				<h3>FACE</h3>
+
+				<p class="footer-links">
+					<a asp-controller="Home" asp-action="MainPage" >Ana Sayfa</a>
+
+					<a href="#">Hakkımda</a>
+
+					<a href="#">İletişim</a>
+
+				</p>
+
+				<p class="footer-company-name">FACE INT © 2023</p>
+			</div>
+
+			<div class="footer-center">
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+90 555 555 55 55</p>
+				</div>
+
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="https://www.google.com">WebProje@company.com</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-company-about">
+					<span>Şirket Hakkında</span>
+					Face int, yapay zeka, nesnelerin interneti ve
+					otomasyon teknolojilerinde uzmanlaşmış bir teknoloji şirketidir.
+					Müşterilerine özelleştirilmiş çözümler sunan şirket, iş süreçlerini
+					optimize etmelerine ve daha akıllı iş kararları almalarına yardımcı olur.
+					Yüksek kaliteli teknoloji uzmanlarından oluşan bir ekibe sahip olan Face int,
+					inovasyona önem vererek müşterilerinin gereksinimlerine uygun hizmetlersunar.
+				</p>
+
+				<div class="footer-icons">
+
+						<a href="https://www.instagram.com" class="icon icon--instagram">
+							<i class="fa-brands fa-instagram"></i>
+						</a>
+						<a href="https://twitter.com" class="icon icon--twitter">
+							<i class="fa-brands fa-twitter"></i>
+						</a>
+						<a href="https://www.linkedin.com" class="icon icon--linkedin">
+							<i class="fa-brands fa-linkedin"></i>
+						</a>
+						<a href="https://github.com" class="icon icon--github">
+							<i class="fa-brands fa-github"></i>
+						</a>
+
+				</div>
+
+			</div>
+
+		</footer>
+
+
+
+	</div>
+
+</body>
+</html>
